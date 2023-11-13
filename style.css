@@ -7,7 +7,11 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(21, 0, 25);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
 h1,h2,h3,h4,h5,h6,p{
     font-weight: normal;
@@ -23,32 +27,32 @@ a{
 li{
     list-style-type: none;
 }
-img{
-}
+
 /* end reset*/
 
-div{
-
-}
 /*header,footer*/
 header{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(108, 108, 108);
-    margin:12px 0px 0px 0px; 
-    padding: 1px;
     height: 80px;
     max-width:100%;
     align-content: center;
+    padding: 0px 10px 0px 10px;
 }
 footer{
     display: flex;
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+    min-width: 1000px;
+    background-color: rgb(21, 0, 25);
+
+}
+.a{
+    display: flex;
     justify-content: space-between;
     color: white;
-    background-color: rgb(0, 0, 0);
-    margin: 12px 0px 0px 0px; 
-    padding: 25px;
-    max-width:100%;
+    width:95%;    
 }
 nav{
     display: flex;
@@ -59,24 +63,23 @@ nav{
 .a-footer{
     color: white;
 }
-.wrap{
-    width: 1200px;
-    margin: 0px auto;
-    background-color: rgb(255, 255, 255);
-
-}
-
 .logo{
-    height: 50px;
-    padding: 20px;
+    height: 80px;
+    padding: 1px;
 }
 .hero-h1{
-    text-align:center;
-    font-size: 100px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 80px;
+    text-align: center;
 }
 h6{
-    font-size: 12px;
-    padding: 3px;
+    font-size: 16px;
+    padding: 10px;
+}
+h5{
+    font-size: 20px;
+    padding-bottom: 20px; 
 }
 h2{
     font-size: 24px;
@@ -88,21 +91,59 @@ h3{
 }
 p{
     font-size: 16px;
-    padding: 1px;
+    padding: 3px;
 }
 
+.copyR{
+    margin-top: 200px;
+}
+.L{
+    border-top: 5px solid  rgb(36, 36, 36);
+    border-right: 5px solid  rgb(36, 36, 36);
+    border-left: 5px solid rgb(36, 36, 36);
+    border-radius: 20px 20px 0px 0px;
+    margin: 0px 70px 0px 70px;
+    height: 100%;
+}
 /*home*/
 .hero-H{
-    background-image: url(images/hero1.jpg);
-    background-size: auto 100%;
+    background-image: url(images/logo2.2.png);
+    background-size: 80% auto;
+    background-position: 20% 50%;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    height: 900px;
+    align-items: left;
     text-align: center;
-    height: 600px;
-    
+    border-top: 5px solid  rgb(36, 36, 36);
+    border-right: 5px solid  rgb(36, 36, 36);
+    border-left: 5px solid rgb(36, 36, 36);
+    border-radius: 20px 20px 0px 0px;
+    margin: 0px 70px 0px 70px;
+    background-color: white;
 }
-
-
+.D{
+    display: flex;
+    background-color: rgb(129, 28, 129);
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    border-top: 25px solid  rgb(184, 41, 184);
+    border-bottom: 25px solid rgb(98, 22, 98);
+    min-width: 1000px; 
+}
+.hero-hi{
+    width: 600px;
+    padding-bottom:20px ;
+}
+.wrap{
+    width: 1000px;
+    margin: 80px auto 0px auto;
+    background-color:rgba(245, 245, 245, 0.943);
+    border-radius: 20px 20px 0px 0px;
+    border-top: 1px solid  rgb(159, 159, 159);
+    border-right: 1px solid  rgb(159, 159, 159);
+    border-left: 1px solid rgb(159, 159, 159);
+}
 /*Background*/
 .hero-B{
     background-image: url(images/hero-B.jpg);
@@ -115,14 +156,14 @@ p{
 .sec1{
     background-color: rgb(150, 150, 150);
     padding: 12px;
-    height: 250px;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
 }
 .sec2{
     background-color: rgb(255, 255, 255);
     padding: 12px;
-    height: 250px;
+    height: auto;
     
 }
 .sec3{
@@ -145,7 +186,6 @@ textarea{
 form{
     display: flex;
     flex-direction: column;
-    width: 300px;
 }
 .button{
     background-color: gray;
@@ -154,6 +194,27 @@ form{
     padding: 10px 20px 10px 20px
 }
 /* profolio */
+
+.wrap2{
+    width: 1000px;
+    height: 1000px;
+    margin: 80px auto -900px auto;
+    background-color:rgba(245, 245, 245, 0.943);
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid  rgb(159, 159, 159);
+}
+
+.body-p{
+    background-color: rgb(184, 184, 184);
+}
+.card-p{
+    border: 1px solid  rgb(36, 036, 036);
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px;
+    background-color: white;
+}
+
 .hero-P{
     background-image: url(images/hero-2.jpg);
     background-size: auto 100%;
@@ -161,74 +222,78 @@ form{
     background-position: 50% 50%;
     text-align: center;
     height: 600px;
-    
 }
 .item{
-    width: 300px;
-    height: 400px;
-    margin: 10px;
-    background-color: rgb(176, 255, 255);
-    text-align: center;   
+    width: 250px;
+    height: 100%;
+    background-color:rgba(245, 245, 245, 0.945);
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0px -20px 0px 0px;
+    border: 1px solid  rgb(159, 159, 159);
 }
 
 .items{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    min-width: 1000px;
 }
 .row1{
     display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(0, 218, 218);
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(67, 67, 67, 0.5);
     margin: 10px 0px 10px 0px;
+    padding: 5px 0px 5px 0px ;
+    height: 350px;
+    width: 100%;
 }
 .row2{
     display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(0, 218, 218);
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(67, 67, 67, 0.5);
     margin: 10px 0px 10px 0px;
+    padding: 5px 0px 5px 0px ;
+    height: 350px;
+    width: 100%;
+
 }
 .items-img{
-    width: 250px;
-    margin: 10px;
-    
-    
+    width: 90%;
+    border-radius: 10px;
 }
+
 /*item*/
+.wrap3{
+    width: 1000px;
+    height: auto;
+    margin: 80px auto 0px auto;
+    background-color:rgba(245, 245, 245, 0.943);
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid  rgb(159, 159, 159);
+}
+
+.item-img{
+    width: 40%;
+    border-radius: 20px;
+    padding: 12px;
+
+}
 .item-row{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+}
+.item-column{
+    display: flex;
+    flex-direction: column;
 }
 .item-text{
-    display: inline-block;
-    width: 400px;
-    margin: 100px 0px 50px 0px;
-    
-}
-.item-h1{
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
-    margin: 10px;
-}
-.item-hero{
-    width: 600px; 
-
-}
-.sub-imgs{
-    margin: 2px;
-    width: 150px; 
-
-}
-.item-imgs{
-    width: 600px;
-    padding: 12px;
-    margin: 5px;
-    border: 5px solid rgb(0, 192, 221);
-}
-.item-main{
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 30px 0px 30px;
-
+    text-align: left; 
+    padding: 30px; 
+    min-height: 400px;
 }
